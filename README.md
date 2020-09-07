@@ -102,3 +102,5 @@ path1: the input path of sequence feature after feature selection
 path2: the input path of physicochemical feature after feature selection
 
 """
+
+![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.jpg)
