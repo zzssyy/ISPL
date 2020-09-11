@@ -90,7 +90,7 @@ IMRMD feature selection
 
 usage:
 
-python3  IMRMD.py  -i test.csv -o metrics.csv  -c Dimensionalized_dataset.csv
+python3 IMRMD.py -i input.csv -o matix.csv -c output.csv
 
 """
 
