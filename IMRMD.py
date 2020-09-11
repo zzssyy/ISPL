@@ -29,12 +29,7 @@ import time
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-s", type=int, help="start index", default=1)
     parser.add_argument("-i", type=str, help="input file",required=True)
-    parser.add_argument("-e", type=int, help="end index", default=-1)
-    parser.add_argument("-l",  type=int, help="step length", default=1)
-    parser.add_argument("-m", type=int, help="imrmd features top n",default=-1)
-    parser.add_argument("-t", type=str, help="metric basline", default="f1")
     parser.add_argument("-o", type=str, help="output the metrics file",default=None)
     parser.add_argument("-c", type=str, help="output the dimensionality reduction file")
 
