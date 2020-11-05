@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 27 09:45:14 2020
-
-@author: Z
-"""
 
 import numpy as np
 import pandas as pd
+import sys
 
 #按模态合并数据
 def data_load(path11,path12,path2,path31,path32,path41,path42,wf12,wf34):   
@@ -81,13 +77,13 @@ def data_load(path11,path12,path2,path31,path32,path41,path42,wf12,wf34):
         cin = csv.writer(fout)
         cin.writerows(results.tolist())
 
-path11 = ''
-path12 = ''
-path2 = ''
-path31 = ''
-path32 = ''
-path41 = ''
-path42 = ''
-wf12 = ''
-wf34 = ''
+path11 = sys.argv[1]
+path12 = sys.argv[2]
+path2 = sys.argv[3]
+path31 = sys.argv[4]
+path32 = sys.argv[5]
+path41 = sys.argv[6]
+path42 = sys.argv[7]
+wf12 = sys.argv[8]
+wf34 = sys.argv[9]
 datas, labels = data_load(path11,path12,path2,path31,path32,path41,path42,wf12,wf34)

@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 23 20:24:10 2020
-
-@author: Z
-"""
 
 from tensorflow.keras.layers import Dense, Embedding, Dropout, Flatten, Conv1D, Input, concatenate
 from wordvectrain import load_file
@@ -17,6 +12,7 @@ from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint
 import os
 import tensorflow as tf
 from keras.engine import Layer, InputSpec
+import sys
 
 class KMaxPooling(Layer):
     def __init__(self, k=1, **kwargs):
@@ -75,19 +71,19 @@ def CNN_model(x_train_padded_seqs,y_train,x_test_padded_seqs,y_test,embedding_ma
     result = model.predict(x_test_padded_seqs)
     result_labels = np.argmax(result, axis=1)
     y_predict = list(map(float, result_labels))
-    print('准确率', metrics.accuracy_score(y_test, y_predict))
-    print('召回率', metrics.recall_score(y_test, y_predict))
-    print('精确率', metrics.precision_score(y_test, y_predict))
+    print('accuracy', metrics.accuracy_score(y_test, y_predict))
+    print('recall', metrics.recall_score(y_test, y_predict))
+    print('precision', metrics.precision_score(y_test, y_predict))
     print('f1-score:', metrics.f1_score(y_test, y_predict))
 
 if __name__ == "__main__":
-    path1 = ''
-    path2 = ''
-    outpath = ''    
+    path1 = sys.argv[1]
+    path2 = sys.argv[2]
+    outpath = sys.argv[3]   
     texts, labels = load_file(path1,path2,outpath)
     word_index, embedding_matrix = get_word2vec()
     texts = tokenizer(texts, word_index)
     x_train, x_test, y_train, y_test = split_data(texts, labels)
-	BASE_DATA_PATH = ''
+	BASE_DATA_PATH = sys.argv[4]
     CNN_model(x_train, y_train, x_test, y_test, embedding_matrix, top_k=3, num_filters=64,BASE_DATA_PATH)
     model_load()

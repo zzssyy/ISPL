@@ -1,4 +1,4 @@
-from mlxtend.classifier import StackingClassifier, StackingCVClassifier
+from mlxtend.classifier import stackingCVClassifier
 from mlxtend.feature_selection import ColumnSelector
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
@@ -6,9 +6,9 @@ from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.model_selection import KFold, cross_val_score
 from sklearn.externals import joblib
+import sys
+from pathlib import Path
 
 def data_load(path1, path2):
     datas1 = list()   
@@ -44,15 +44,23 @@ def model(x_train, x_test, y_train, y_test, len1, len2):
 	
     sclf.fit(np.array(x_train), y_train)
     pred_testlabel = sclf.predict(np.array(x_test))
-    print('准确率', metrics.accuracy_score(y_test, pred_testlabel))
-    print('召回率', metrics.recall_score(y_test, pred_testlabel,average='weighted'))
-    print('精确率', metrics.precision_score(y_test, pred_testlabel,average='weighted'))
+    print('accuracy', metrics.accuracy_score(y_test, pred_testlabel))
+    print('recall', metrics.recall_score(y_test, pred_testlabel,average='weighted'))
+    print('precision', metrics.precision_score(y_test, pred_testlabel,average='weighted'))
     print('f1-score:', metrics.f1_score(y_test, pred_testlabel,average='weighted'))
     
     joblib.dump(sclf, "train_model.m")
 
-path1 = ''
-path2 = ''
+def predict(X):
+    model = joblib.load(train_model.m)
+    y = model.predict(X)
+    print(y)
+    
+path1 = sys.argv[1]
+path2 = sys.argv[2]
 X, y, len1, len2 = data_load(path1, path2)
-x_train, x_test, y_train, y_test = split_data(X, y)
-model(x_train, x_test, y_train, y_test, len1, len2)
+if Path('train_model.m').exists() is False:
+    x_train, x_test, y_train, y_test = split_data(X, y)
+    model(x_train, x_test, y_train, y_test, len1, len2)
+else:
+    predict(X)
