@@ -30,11 +30,7 @@ Get the k-mer feature
 
 usage:
 
-rf: the input path
-
-wf: the output path
-
-k: k value of k-mer
+rf: the input path; wf: the output path; k: k value of k-mer
 
 """
 
@@ -62,23 +58,15 @@ Used to fuse different modal features
 
 usage:
 
-path11: the input path of k-mer (positive samples)
+path11: the input path of k-mer (positive samples); path12: the input path of k-mer (negative samples)
 
-path12: the input path of k-mer (negative samples)
+path2: the input path of cnn-f; 
 
-path2: the input path of cnn-f
+path31: the input path of APAAC (positive samples); path32: the input path of APAAC (negative samples)
 
-path31: the input path of APAAC (positive samples)
+path41: the input path of 188D (positive samples); path42: the input path of 188D (negative samples)
 
-path32: the input path of APAAC (negative samples)
-
-path41: the input path of 188D (positive samples)
-
-path42: the input path of 188D (negative samples)
-
-wf12: the output of sequence feature
-
-wf34: the output of physicochemical feature
+wf12: the output of sequence feature; wf34: the output of physicochemical feature
 
 """
 
@@ -102,10 +90,16 @@ Ensemble learning stacking method to obtain the final result
 
 usage:
 
-path1: the input path of sequence feature after feature selection
-
-path2: the input path of physicochemical feature after feature selection
+path1: the input path of sequence feature after feature selection; path2: the input path of physicochemical feature after feature selection
 
 """
+
+You can also use ISPL.py to test your data
+
+usage:
+
+python ISPL.py path
+
+path is the path your data
 
 ![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.jpg)
