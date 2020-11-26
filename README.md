@@ -98,8 +98,8 @@ You can also use ISPL.py to test your data
 
 usage:
 
-python ISPL.py path
+python ISPL.py input
 
-path is the path your data
+input is the file of your data
 
 ![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.jpg)
