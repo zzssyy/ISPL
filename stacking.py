@@ -39,7 +39,7 @@ def model(x_train, x_test, y_train, y_test, len1, len2):
     pipe1 = make_pipeline(ColumnSelector(cols=range(0, len1)), clf)
     pipe2 = make_pipeline(ColumnSelector(cols=range(len1, len1+len2)), clf)
 	
-    sclf = StackingCVClassifier(classifiers=[pipe1, pipe2], 
+    sclf = StackingCVClassifier(classifiers=[pipe1, pipe2], cv=5,
 							  meta_classifier=LogisticRegression())
 	
     sclf.fit(np.array(x_train), y_train)
