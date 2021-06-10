@@ -11,13 +11,11 @@ Language dependency: Python 3 (Please do not use Python 2 to run the code.)
 
 Library dependency:
 
-Numpy
-
-pandas
-
-Keras
-
-tensorflow
+Numpy 1.18.5
+Keras 2.2.4
+tensorflow 2.3.0
+mlxtend 0.18.0
+scikit-learn 0.22
 
 
 usage:
