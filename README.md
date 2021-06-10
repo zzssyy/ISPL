@@ -12,9 +12,13 @@ Language dependency: Python 3 (Please do not use Python 2 to run the code.)
 Library dependency:
 
 Numpy
+
 pandas
+
 Keras
+
 tensorflow
+
 
 usage:
 
