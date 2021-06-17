@@ -30,7 +30,7 @@ input is the file of your data
 
 There is a sample sequence file sample_seqs.fa under the directory ./demo_files/. You can try to run ISPL on this file:
 
-python ISPL.py ./demo_files/sample_seqs.fa
+python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa
 
 # Running time
 
