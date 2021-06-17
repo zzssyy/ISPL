@@ -36,5 +36,6 @@ There is a sample sequence file sample_seqs.fa under the directory ./demo_files/
 
 python ISPL.py ./demo_files/sample_seqs.fa
 
+# Graphical abstract
 
 ![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.jpg)
