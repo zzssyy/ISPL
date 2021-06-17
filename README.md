@@ -1,6 +1,6 @@
 # ISPL
 
-An bioinformatics tool for identifying plant lncRNA-encoded short peptides
+A bioinformatics tool for identifying plant lncRNA-encoded short peptides
 
 # OS
 win10
