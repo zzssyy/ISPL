@@ -34,4 +34,4 @@ python ISPL.py ./demo_files/sample_seqs.fa
 
 # Graphical abstract
 
-![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.jpg)
+![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.png)
