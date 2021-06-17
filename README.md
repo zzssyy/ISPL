@@ -21,16 +21,17 @@ mlxtend 0.18.0
 scikit-learn 0.22
 
 # Usage
+There is a sample sequence file sample_seqs.fa under the directory ./demo_files/.
 
-python ISPL.py input_fasta_file
+Our method includes two operation modes. When flag ='0', the number of positive and negative samples should be input for identification mode. You can try to run ISPL on this file:
 
-input is the file of your data
+python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa number_of_positive_samples number_of_negative_samples
 
-# Demo
 
-There is a sample sequence file sample_seqs.fa under the directory ./demo_files/. You can try to run ISPL on this file:
+When flag ='1', it is the prediction mode, and it is not necessary to input the number of positive and negative samples.You can try to run ISPL on this file:
 
 python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa
+
 
 # Running time
 
