@@ -428,7 +428,7 @@ def read_aas(rf):
     return datas
 
 def feature_integration(fastas, rf1, rf2):
-	cnnf = cnn_f(rf1, m)
+	cnnf = cnn_f(rf1)
 	kmers = k_mers(rf2, k=3)
 	AC = AAC(fastas)
 	AP = APAAC(fastas)

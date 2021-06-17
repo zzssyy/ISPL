@@ -40,7 +40,7 @@ def data_load(path):
 
 
 def run(path):
-    text, label, IDs = data_load(path)
+    text, IDs = data_load(path)
     word_index, embedding_matrix = get_word2vec(path='aas.model')
     texts = tokenizer(text, word_index)
     model = model_load()
