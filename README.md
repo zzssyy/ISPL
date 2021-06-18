@@ -28,7 +28,7 @@ Our method includes two operation modes. When flag ='0', the number of positive 
 python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa number_of_positive_samples number_of_negative_samples
 
 
-When flag ='1', it is the prediction mode, and it is not necessary to input the number of positive and negative samples.You can try to run ISPL on this file:
+When flag ='1', it is the prediction mode, and it should not input the number of positive and negative samples. You can try to run ISPL on this file:
 
 python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa
 
