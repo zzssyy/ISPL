@@ -21,7 +21,7 @@ mlxtend 0.18.0
 scikit-learn 0.22
 
 # Usage
-There is a sample sequence file sample_seqs.fa under the directory ./demo_files/.
+There is a sample sequence file under the directory ./demo_files/.
 
 Our method includes two operation modes. When flag ='0', the number of positive and negative samples should be input for identification mode. You can try to run ISPL on this file:
 
