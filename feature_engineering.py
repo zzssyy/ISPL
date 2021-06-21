@@ -155,13 +155,8 @@ def CTDC_Count(seq1, seq2):
 
 def CTDC(fastas):
 	group1 = {
-		'hydrophobicity_PRAM900101': 'RKEDQN',
-		'hydrophobicity_ARGP820101': 'QSTNGDE',
-		'hydrophobicity_ZIMJ680101': 'QNGSWTDERA',
-		'hydrophobicity_PONP930101': 'KPDESNQT',
-		'hydrophobicity_CASG920101': 'KDEQPSRNTG',
-		'hydrophobicity_ENGD860101': 'RDKENQHYP',
-		'hydrophobicity_FASG890101': 'KERSQD',
+		'hydrophobicity': 'RKEDQN',
+		'surfacetension': 'GQDNAHR',
 		'normwaalsvolume': 'GASTPDC',
 		'polarity':        'LIFWCMVY',
 		'polarizability':  'GASDT',
@@ -170,13 +165,8 @@ def CTDC(fastas):
 		'solventaccess':   'ALFCGIVW'
 	}
 	group2 = {
-		'hydrophobicity_PRAM900101': 'GASTPHY',
-		'hydrophobicity_ARGP820101': 'RAHCKMV',
-		'hydrophobicity_ZIMJ680101': 'HMCKV',
-		'hydrophobicity_PONP930101': 'GRHA',
-		'hydrophobicity_CASG920101': 'AHYMLV',
-		'hydrophobicity_ENGD860101': 'SGTAW',
-		'hydrophobicity_FASG890101': 'NTPG',
+		'hydrophobicity': 'GASTPHY',
+		'surfacetension': 'KTSEC',
 		'normwaalsvolume': 'NVEQIL',
 		'polarity':        'PATGS',
 		'polarizability':  'CPNVEQIL',
@@ -185,13 +175,8 @@ def CTDC(fastas):
 		'solventaccess':   'RKQEND'
 	}
 	group3 = {
-		'hydrophobicity_PRAM900101': 'CLVIMFW',
-		'hydrophobicity_ARGP820101': 'LYPFIW',
-		'hydrophobicity_ZIMJ680101': 'LPFYI',
-		'hydrophobicity_PONP930101': 'YMFWLCVI',
-		'hydrophobicity_CASG920101': 'FIWC',
-		'hydrophobicity_ENGD860101': 'CVLIMF',
-		'hydrophobicity_FASG890101': 'AYHWVMFLIC',
+		'hydrophobicity': 'CLVIMFW',
+		'surfacetension': 'ILMFPWYV',
 		'normwaalsvolume': 'MHKFRYW',
 		'polarity':        'HQRKNED',
 		'polarizability':  'KMHFRYW',
@@ -202,8 +187,7 @@ def CTDC(fastas):
 
 	groups = [group1, group2, group3]
 	property = (
-	'hydrophobicity_PRAM900101', 'hydrophobicity_ARGP820101', 'hydrophobicity_ZIMJ680101', 'hydrophobicity_PONP930101',
-	'hydrophobicity_CASG920101', 'hydrophobicity_ENGD860101', 'hydrophobicity_FASG890101', 'normwaalsvolume',
+	'hydrophobicity', 'surfacetension', 'normwaalsvolume',
 	'polarity', 'polarizability', 'charge', 'secondarystruct', 'solventaccess')
 
 	encodings = []
@@ -225,13 +209,8 @@ def CTDC(fastas):
 
 def CTDT(fastas):
 	group1 = {
-		'hydrophobicity_PRAM900101': 'RKEDQN',
-		'hydrophobicity_ARGP820101': 'QSTNGDE',
-		'hydrophobicity_ZIMJ680101': 'QNGSWTDERA',
-		'hydrophobicity_PONP930101': 'KPDESNQT',
-		'hydrophobicity_CASG920101': 'KDEQPSRNTG',
-		'hydrophobicity_ENGD860101': 'RDKENQHYP',
-		'hydrophobicity_FASG890101': 'KERSQD',
+		'hydrophobicity': 'RKEDQN',
+		'surfacetension': 'GQDNAHR',
 		'normwaalsvolume': 'GASTPDC',
 		'polarity':        'LIFWCMVY',
 		'polarizability':  'GASDT',
@@ -240,13 +219,8 @@ def CTDT(fastas):
 		'solventaccess':   'ALFCGIVW'
 	}
 	group2 = {
-		'hydrophobicity_PRAM900101': 'GASTPHY',
-		'hydrophobicity_ARGP820101': 'RAHCKMV',
-		'hydrophobicity_ZIMJ680101': 'HMCKV',
-		'hydrophobicity_PONP930101': 'GRHA',
-		'hydrophobicity_CASG920101': 'AHYMLV',
-		'hydrophobicity_ENGD860101': 'SGTAW',
-		'hydrophobicity_FASG890101': 'NTPG',
+		'hydrophobicity': 'GASTPHY',
+		'surfacetension': 'KTSEC',
 		'normwaalsvolume': 'NVEQIL',
 		'polarity':        'PATGS',
 		'polarizability':  'CPNVEQIL',
@@ -255,13 +229,8 @@ def CTDT(fastas):
 		'solventaccess':   'RKQEND'
 	}
 	group3 = {
-		'hydrophobicity_PRAM900101': 'CLVIMFW',
-		'hydrophobicity_ARGP820101': 'LYPFIW',
-		'hydrophobicity_ZIMJ680101': 'LPFYI',
-		'hydrophobicity_PONP930101': 'YMFWLCVI',
-		'hydrophobicity_CASG920101': 'FIWC',
-		'hydrophobicity_ENGD860101': 'CVLIMF',
-		'hydrophobicity_FASG890101': 'AYHWVMFLIC',
+		'hydrophobicity': 'CLVIMFW',
+		'surfacetension': 'ILMFPWYV',
 		'normwaalsvolume': 'MHKFRYW',
 		'polarity':        'HQRKNED',
 		'polarizability':  'KMHFRYW',
@@ -272,8 +241,7 @@ def CTDT(fastas):
 
 	groups = [group1, group2, group3]
 	property = (
-	'hydrophobicity_PRAM900101', 'hydrophobicity_ARGP820101', 'hydrophobicity_ZIMJ680101', 'hydrophobicity_PONP930101',
-	'hydrophobicity_CASG920101', 'hydrophobicity_ENGD860101', 'hydrophobicity_FASG890101', 'normwaalsvolume',
+	'hydrophobicity', 'surfacetension', 'normwaalsvolume',
 	'polarity', 'polarizability', 'charge', 'secondarystruct', 'solventaccess')
 
 	encodings = []
@@ -326,13 +294,8 @@ def CTDD_Count(aaSet, sequence):
 
 def CTDD(fastas):
 	group1 = {
-		'hydrophobicity_PRAM900101': 'RKEDQN',
-		'hydrophobicity_ARGP820101': 'QSTNGDE',
-		'hydrophobicity_ZIMJ680101': 'QNGSWTDERA',
-		'hydrophobicity_PONP930101': 'KPDESNQT',
-		'hydrophobicity_CASG920101': 'KDEQPSRNTG',
-		'hydrophobicity_ENGD860101': 'RDKENQHYP',
-		'hydrophobicity_FASG890101': 'KERSQD',
+		'hydrophobicity': 'RKEDQN',
+		'surfacetension': 'GQDNAHR',
 		'normwaalsvolume': 'GASTPDC',
 		'polarity':        'LIFWCMVY',
 		'polarizability':  'GASDT',
@@ -341,13 +304,8 @@ def CTDD(fastas):
 		'solventaccess':   'ALFCGIVW'
 	}
 	group2 = {
-		'hydrophobicity_PRAM900101': 'GASTPHY',
-		'hydrophobicity_ARGP820101': 'RAHCKMV',
-		'hydrophobicity_ZIMJ680101': 'HMCKV',
-		'hydrophobicity_PONP930101': 'GRHA',
-		'hydrophobicity_CASG920101': 'AHYMLV',
-		'hydrophobicity_ENGD860101': 'SGTAW',
-		'hydrophobicity_FASG890101': 'NTPG',
+		'hydrophobicity': 'GASTPHY',
+		'surfacetension': 'KTSEC',
 		'normwaalsvolume': 'NVEQIL',
 		'polarity':        'PATGS',
 		'polarizability':  'CPNVEQIL',
@@ -356,13 +314,8 @@ def CTDD(fastas):
 		'solventaccess':   'RKQEND'
 	}
 	group3 = {
-		'hydrophobicity_PRAM900101': 'CLVIMFW',
-		'hydrophobicity_ARGP820101': 'LYPFIW',
-		'hydrophobicity_ZIMJ680101': 'LPFYI',
-		'hydrophobicity_PONP930101': 'YMFWLCVI',
-		'hydrophobicity_CASG920101': 'FIWC',
-		'hydrophobicity_ENGD860101': 'CVLIMF',
-		'hydrophobicity_FASG890101': 'AYHWVMFLIC',
+		'hydrophobicity': 'CLVIMFW',
+		'surfacetension': 'ILMFPWYV',
 		'normwaalsvolume': 'MHKFRYW',
 		'polarity':        'HQRKNED',
 		'polarizability':  'KMHFRYW',
@@ -373,8 +326,7 @@ def CTDD(fastas):
 
 	groups = [group1, group2, group3]
 	property = (
-	'hydrophobicity_PRAM900101', 'hydrophobicity_ARGP820101', 'hydrophobicity_ZIMJ680101', 'hydrophobicity_PONP930101',
-	'hydrophobicity_CASG920101', 'hydrophobicity_ENGD860101', 'hydrophobicity_FASG890101', 'normwaalsvolume',
+	'hydrophobicity', 'surfacetension', 'normwaalsvolume',
 	'polarity', 'polarizability', 'charge', 'secondarystruct', 'solventaccess')
 
 	encodings = []
@@ -438,7 +390,7 @@ def feature_integration(fastas, rf1, rf2):
 	ACTD = np.column_stack((np.array(AC), np.array(CC)[:, 1:], np.array(CT)[:, 1:], np.array(CD)[:, 1:]))
 	seq = np.column_stack((np.array(cnnf), np.array(kmers)[:, 21:]))
 	print(seq.shape)
-	phy = np.column_stack((ACTD[:, :189], np.array(AP)[:, 21:]))
+	phy = np.column_stack((ACTD, np.array(AP)[:, 21:]))
 	print(phy.shape)
 	col = list()
 	for i in range(len(seq[0])):
