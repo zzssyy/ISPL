@@ -25,12 +25,12 @@ There is a sample sequence file under the directory ./demo_files/.
 
 Our method includes two operation modes. When flag ='0', the number of positive and negative samples should be input for identification mode. You can try to run ISPL on this file:
 
-python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa number_of_positive_samples number_of_negative_samples
+python ISPL.py ./demo_files/test_aas.fa ./demo_files/test_RNAs.fa number_of_positive_samples number_of_negative_samples
 
 
 When flag ='1', it is the prediction mode, and it should not input the number of positive and negative samples. You can try to run ISPL on this file:
 
-python ISPL.py ./demo_files/sample_aas.fa ./demo_files/sample_RNAs.fa
+python ISPL.py ./demo_files/test_aas.fa ./demo_files/test_RNAs.fa
 
 
 # Running time
