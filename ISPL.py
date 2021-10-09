@@ -20,6 +20,6 @@ seq, phy = reduce_dimension.run(seq, phy)
 
 #ensemble learning
 if flag == '0':
-    stacking.identify(seq, phy, m, n)
+    stacking.identify(seq, phy, int(m), int(n))
 else:
     stacking.predict(seq, phy)
