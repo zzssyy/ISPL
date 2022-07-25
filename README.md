@@ -39,4 +39,4 @@ ILSP runs about 8s on the independent test test.
 
 # Graphical abstract
 
-![image](https://github.com/zzssyy/bioinformatics/blob/master/Graphical-abstract.png)
+![image](https://github.com/zzssyy/ISPL/blob/master/Graphical-abstract.png)
